@@ -1,0 +1,79 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: linear-gradient(243.18deg, #9B9C81 0%, #959595 50.23%, #696969 100%);
+}
+
+.container{
+    max-width: 1356px;
+    width: 100%;
+    margin: auto; 
+}
+
+.header_block, .navigation, .about_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_block, .about_block{
+    margin-top: 91px;
+    margin-bottom: 181px;
+}
+
+.navigation{
+    width: 934px;
+}
+
+.logo_header{
+    font-family: "Caveat", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    text-shadow: 10px 0px 5.2px rgba(0, 0, 0, 0.22);
+}
+
+.header_but{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.17) 0%, rgba(102, 102, 102, 0.17) 100%);
+    border-radius: 40px;
+    box-shadow: 8px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+    padding: 4px 29px;
+}
+
+.about_my_name{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    width: 580px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.about_me{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    width: 604px;
+    margin-top: 18px;
+}
+
+
+
+
