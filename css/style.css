@@ -1,0 +1,218 @@
+/* Весь текст Times New Roman */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Настройки фона */
+body{
+    height: 3888px;
+    background-image: linear-gradient(243.18deg, #9B9C81 0%, #959595 50.23%, #696969 100%);
+}
+
+/* Настройки ширины высоты всех контейнеров */
+.container{
+    max-width: 1356px;
+    width: 100%;
+    margin: auto; 
+}
+
+/* Настройка блоков для выравнивания */
+.header_block, .navigation, .about_block, .footer_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Отдельный блок обо мне */
+.obo_mne_block, .project, .my_navik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Расстояние сверху и снизу между блоками */
+.header_block, .about_block, .obo_mne_block, .project, .my_navik{
+    margin-top: 91px;
+    margin-bottom: 181px;
+}
+
+/* Начало настройки шапки */
+.navigation{
+    width: 934px;
+}
+
+.logo_header{
+    font-family: "Caveat", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    text-shadow: 10px 0px 5.2px rgba(0, 0, 0, 0.22);
+}
+
+.header_but{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.17) 0%, rgba(102, 102, 102, 0.17) 100%);
+    border-radius: 40px;
+    box-shadow: 8px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+    padding: 4px 29px;
+}
+/* Конец настройки шапки */
+
+/* Настройка заколовка с фоткой */
+.zagolovok_about_my_name{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    width: 580px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.zagolovok_all{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    width: 1186px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.about_me{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    width: 604px;
+    margin-top: 18px;
+}
+/* Конец заколовка с фоткой */
+
+/* Начало первого блока с текстом обо мне */
+.text_in_win, .text_in_win_navik{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -0.03em;
+    color: #000;
+    text-align: center;
+    padding: 125px
+}
+
+.obo_mne_rectangle, .navik_rectangle{
+    border-radius: 150px;
+    width: 1186px;
+    height: 419px;
+    box-shadow: 13px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.13);
+}
+/* Конец первого блока с текстом обо мне */
+
+
+.project_rectangle{
+    width: 416px;
+    height: 602px;
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: 16px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    margin-top: 40px;
+}
+
+/* Настройка footer */
+.obr_connect{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.obr_connect > input{
+    width: 375px;
+    height: 73px;
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: 11px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 61px;
+    margin: 16px;
+    border: none;
+}
+
+.tetx_obr_connect{
+    width: 312px;
+    height: 65px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+}
+
+::placeholder{
+    width: 223px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    color: rgba(6, 6, 6, 0.51);
+    padding: 76px 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Настройка адаптивности */
+@media (max-width: 600px) {
+    .container{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .header_block, .about_block, .navigation{
+        flex-direction: column;
+    }
+
+    .header_block, .navigation{
+        align-items: flex-start;
+    }
+
+    .zagolovok_about_my_name{
+        font-size: 50px;
+    }
+
+    .about_me{
+        font-size: 25px;
+    }
+
+    .header_but{
+        font-size: 35px;
+    }
+
+    .navigation{
+        max-width: 500px;
+    }
+
+    .about_photo > img{
+        width: 400px;
+        height: auto;
+    }
+}
+
+
