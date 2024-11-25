@@ -51,7 +51,7 @@
     <!-- Конец блока описания обо мне и фотка -->
 
     <!-- Начало блока описания обо мне -->
-    <div class="container obo_mne_block">  
+    <div class="container obo_mne_block" id="about">  
         <div class="text_obo_mne">
             <p class="zagolovok_all"> Обо мне </p>
             <div class="obo_mne_rectangle">
@@ -62,16 +62,47 @@
     <!-- Конец блока описания обо мне -->
 
     <!-- Начало блка проекты -->
-    <div class="container project">
-        <div class="text_project"> 
-            <p class="zagolovok_all"> Проекты </p>
-            <div class="project_rectangle"> </div> 
+    <div class="projects-section" id="projects">
+        <h2 class="zagolovok_project"> Проекты </h2>
+        
+        <div class="slider-container">
+            <button class="slider-btn left" id="slideLeft">&lt;</button>
+            <div class="slider-window">
+                <div class="slider-content">
+                    <div class="project_rectangle">Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. Vero, quo nulla. Itaque aliquid 
+                        cupiditate excepturi, pariatur optio iure esse eveniet. 
+                        Sed aliquam architecto facilis ipsam quibusdam commodi quidem 
+                        animi maiores.</div>
+                    <div class="project_rectangle">Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. Vero, quo nulla. Itaque aliquid 
+                        cupiditate excepturi, pariatur optio iure esse eveniet. 
+                        Sed aliquam architecto facilis ipsam quibusdam commodi quidem 
+                        animi maiores.</div>
+                    <div class="project_rectangle">Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. Vero, quo nulla. Itaque aliquid 
+                        cupiditate excepturi, pariatur optio iure esse eveniet. 
+                        Sed aliquam architecto facilis ipsam quibusdam commodi quidem 
+                        animi maiores.</div>
+                    <div class="project_rectangle">Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. Vero, quo nulla. Itaque aliquid 
+                        cupiditate excepturi, pariatur optio iure esse eveniet. 
+                        Sed aliquam architecto facilis ipsam quibusdam commodi quidem 
+                        animi maiores.</div>
+                    <div class="project_rectangle">Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. Vero, quo nulla. Itaque aliquid 
+                        cupiditate excepturi, pariatur optio iure esse eveniet. 
+                        Sed aliquam architecto facilis ipsam quibusdam commodi quidem 
+                        animi maiores.</div>
+                </div>
+            </div>
+            <button class="slider-btn right" id="slideRight">&gt;</button>
         </div>
     </div>
     <!-- Конец блка проекты -->
 
      <!-- Начало блока описания моих навыков -->
-     <div class="container my_navik">  
+     <div class="container my_navik" id="skills">  
         <div class="text_navik">
             <p class="zagolovok_all"> Навыки </p>
             <div class="navik_rectangle">
@@ -82,20 +113,36 @@
     <!-- Конец блока описания моих навыков -->
 
 <!-- Начало подвала -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container footer_block"> 
             <div class="obr_connect">
-                <p class="tetx_obr_connect"> Обратная связь </p>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш Email"> 
-                <input type="text" placeholder="Ваш Вопрос">
+                <form action="#" class="obr_connect_form">
+                    <p class="tetx_obr_connect"> Обратная связь </p>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="email" placeholder="Ваш Email"> 
+                    <input type="text" placeholder="Ваш Вопрос">
+                    <input type="submit" value="Отправить">
+                </form>
             </div>
             <div class="contacts">
                 <div class="text_contacts">
-                    <p class=""> Мои Контакты </p>
+                    <p class="my_contact"> Мои Контакты </p>
                     <div class="contact_rectangle">
-                        <p class=""> Номер телефона - 8 999 999 99 99 <br> Мой Email - example@example.ru </p>
-                        <img>
+                        <p class="text_my_contact"> Номер телефона - 8 999 999 99 99 <br> Мой Email - example@example.ru </p>
+                            <div class="img_contact"> 
+                                <a href="https://t.me/danilinav2"> 
+                                    <img src="/sait/photo/telegram.png" alt="telegram">
+                                </a>
+
+                                <a href="https://vk.com/id151129872">
+                                    <img src="/sait/photo/vk.png" alt="vk">
+                                </a>
+
+                                <a href="https://wa.me/89521278823">
+                                    <img src="/sait/photo/whatsapp.png" alt="whatsapp">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>       
@@ -107,6 +154,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous">
     </script>
+
+    <script src="/sait/main.js"> </script>
 </body>
 </html>
 
